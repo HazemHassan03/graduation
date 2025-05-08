@@ -43,8 +43,3 @@ function startTimer() {
     }
   }, 1000);
 }
-
-audio.play();
-audio.addEventListener("ended", () => {
-  audio.play();
-});

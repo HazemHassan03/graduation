@@ -57,7 +57,7 @@ img {
 .not-graduated .timer {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 .not-graduated .timer > div {
@@ -76,10 +76,10 @@ img {
 }
 .not-graduated .timer > div .value {
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
 }
 .not-graduated .timer > div .title {
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
   letter-spacing: 1px;
 }
@@ -101,11 +101,11 @@ img {
 .logos {
   display: flex;
   align-items: center;
-  width: 250px;
+  width: 200px;
   margin: auto;
 }
-.logos img {
-  width: 500px;
+.logos > a {
+  flex: 1;
 }
 .logos .our-logo {
   border-right: 2px solid var(--main-color);
@@ -125,4 +125,21 @@ audio {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
   max-width: 90vw;
+}
+
+@media (min-width: 300px) {
+  .not-graduated .timer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .logos {
+    width: 250px;
+  }
+}
+@media (min-width: 350px) {
+  .not-graduated .timer > div .value {
+    font-size: 40px;
+  }
+  .not-graduated .timer > div .title {
+    font-size: 12px;
+  }
 }
